@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="calculator">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <p class="sun">Light&nbsp;</p>
+                <p class="moon">Dark</p>
+                <div class="ball"></div>
+            </label>
+            <input type="text" placeholder="0" class="output-screen" id="output-screen">
+            <button class="a" onclick="clrscr()">C</button>
+            <button class="b" onclick="deleteLast()">DEL</button>
+            <button class="c" onclick="display('%')">%</button>
+            <button class="d" onclick="display('/')">/</button>
+            <button class="e" onclick="display('7')">7</button>
+            <button class="f" onclick="display('8')">8</button>
+            <button class="g" onclick="display('9')">9</button>
+            <button class="h" onclick="display('*')">*</button>
+            <button class="i" onclick="display('4')">4</button>
+            <button class="j" onclick="display('5')">5</button>
+            <button class="k" onclick="display('6')">6</button>
+            <button class="l" onclick="display('-')">-</button>
+            <button class="m" onclick="display('1')">1</button>
+            <button class="n" onclick="display('2')">2</button>
+            <button class="o" onclick="display('3')">3</button>
+            <button class="p" onclick="display('+')">+</button>
+            <button class="q" onclick="display('.')">.</button>
+            <button class="r" onclick="display('0')">0</button>
+            <button class="s" onclick="calculate()" id="equal">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
